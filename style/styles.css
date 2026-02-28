@@ -239,3 +239,9 @@ h2 {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
 }
+
+span.status-tag {
+    padding: 6px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
