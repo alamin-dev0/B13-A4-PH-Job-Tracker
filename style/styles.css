@@ -245,3 +245,6 @@ span.status-tag {
     border: 1px solid gray;
     border-radius: 4px;
 }
+.section-header {
+    margin-top: 50px;
+}
