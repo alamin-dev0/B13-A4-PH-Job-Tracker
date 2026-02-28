@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/styles.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Job Application Tracker</h1>
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>Total</h3>
+                    <p id="total-count">8</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Interview</h3>
+                    <p id="interview-count">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Rejected</h3>
+                    <p id="rejected-count">0</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="section-header">
+            <h2>Available Jobs</h2>
+            <span class="job-count" id="job-count">8 jobs</span>
+        </div>
+
+        <div class="tabs">
+            <div class="tab active" data-tab="all">All</div>
+            <div class="tab" data-tab="interview">Interview</div>
+            <div class="tab" data-tab="rejected">Rejected</div>
+        </div>
+
+        <div class="jobs-grid" id="jobs-grid"></div>
+
+        <div id="empty-state" class="empty-state hidden">
+            <img src="./jobs.png" alt="">
+            <h3>No jobs available</h3>
+            <p>No applications in this category yet.</p>
+        </div>
+    </main>
+
+    <script src="script/scripts.js"></script>
+</body>
+
+</html>

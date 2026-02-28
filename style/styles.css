@@ -1,0 +1,241 @@
+:root {
+    --primary: #3b82f6;
+    --green: #10b981;
+    --red: #ef4444;
+    --gray: #6b7280;
+    --light: #f3f4f6;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--light);
+    color: #111827;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header {
+    background: var(--white);
+    padding: 2rem 0;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.stat-card {
+    background: var(--white);
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    padding: 1.25rem 2rem;
+    min-width: 140px;
+    text-align: center;
+}
+
+.stat-card h3 {
+    font-size: 0.875rem;
+    color: var(--gray);
+    font-weight: 500;
+}
+
+.stat-card p {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-top: 0.25rem;
+}
+
+#interview-count {
+    color: var(--green);
+}
+
+#rejected-count {
+    color: var(--red);
+}
+
+main {
+    padding: 2.5rem 0;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.job-count {
+    color: var(--gray);
+    font-weight: 500;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #e5e7eb;
+    margin-bottom: 1.5rem;
+}
+
+.tab {
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    color: var(--gray);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+.tab.active {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+}
+
+.jobs-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.job-card {
+    background: var(--white);
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.job-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.job-card .position {
+    font-size: 1rem;
+    color: #374151;
+    margin-bottom: 0.75rem;
+}
+
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.875rem;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+
+.status-tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin: 0.75rem 0;
+}
+
+.not-applied {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.applied {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.description {
+    color: #4b5563;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+}
+
+.actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+}
+
+.btn-interview {
+    background: var(--green);
+    color: white;
+}
+
+.btn-rejected {
+    background: transparent;
+    color: red !important;
+    border: 1px solid red;
+}
+
+.btn-delete {
+    background: #f3f4f6;
+    color: #374151;
+    font-size: 1.25rem;
+    position: absolute;
+    top: 45%;
+    right: 10px;
+    border:unset;
+}
+
+.btn-interview:hover {
+    background: #059669;
+}
+
+.btn-rejected:hover {
+    background: #dc2626;
+    color: white !important;
+}
+
+.btn-delete:hover {
+    background: #e5e7eb;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 4rem 1rem;
+    color: var(--gray);
+}
+
+.empty-state h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
